@@ -1,0 +1,24 @@
+﻿<Window x:Class="GUIDGenWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUIDGenWpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize" WindowStyle="ThreeDBorderWindow">
+    <Grid x:Name="mainWindow" IsEnabled="True">
+        <TextBox x:Name="textGuid1" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="53162240-4393-49d8-b259-db554685725a" VerticalAlignment="Top" 
+                 Width="591" Height="44" FontSize="30" IsReadOnly="True" IsReadOnlyCaretVisible="True" GotFocus="textGuid_GotFocus"/>
+        <Button Content="Generate And Copy" Margin="606,10,10,0" VerticalAlignment="Top" Height="44" FontSize="18" Click="Button_Click"/>
+        <TextBox x:Name="textBoxHistory" Text="This is a generated history box"
+         TextWrapping="Wrap"
+         IsReadOnly="True"
+         BorderThickness="0"
+         Background="Transparent"
+         IsReadOnlyCaretVisible="True" Margin="10,60,10,80" Padding="10, 10, 0, 10"
+         VerticalScrollBarVisibility="Auto"
+         HorizontalScrollBarVisibility="Auto" FontSize="16"/>
+        <CheckBox x:Name="checkBoxOnTop" Content="Always On Top" HorizontalAlignment="Left" Margin="10,360,0,0" VerticalAlignment="Top" Checked="checkBoxOnTop_Toggled" Unchecked="checkBoxOnTop_Toggled"/>
+
+    </Grid>
+</Window>
